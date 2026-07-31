@@ -13,14 +13,16 @@ A cinematic scrolltelling landing page for the Winspace T1600 Ultra road bike, b
 
 | Layer | Choice | Why |
 |---|---|---|
-| Bundler | Vite 5 | Instant dev server, hashed production bundles, lazy chunks |
+| Bundler | [Vite 5](https://vitejs.dev) | Instant dev server, hashed production bundles, lazy chunks |
 | Runtime | Vanilla JS (no framework) | The page is one document; a framework would only add weight |
-| Animation | GSAP 3 + ScrollTrigger | Scroll choreography, pinning, scrubbed timelines |
-| Smooth scroll | Lenis (driven by GSAP's ticker) | Inertia scroll that ScrollTrigger stays in sync with |
-| WebGL | Three.js (lazy chunks) | Hero gold-dust particles, footer particle wordmark, wind shader |
-| Type | Raveo Display / Raveo (self-hosted woff2), Archivo Variable, Caveat | Display + UI + handwriting |
-| Media pipeline | ffmpeg-static (`npm run prepare-videos`) | Re-encodes raw generated video for the web |
-| Hosting | Netlify (static `dist/`) | Headers configured in `netlify.toml` |
+| Animation | [GSAP 3 + ScrollTrigger](https://gsap.com) | Scroll choreography, pinning, scrubbed timelines |
+| Smooth scroll | [Lenis](https://github.com/darkroomengineering/lenis) (driven by GSAP's ticker) | Inertia scroll that ScrollTrigger stays in sync with |
+| WebGL | [Three.js](https://threejs.org) (lazy chunks) | Hero gold-dust particles, footer particle wordmark, wind shader |
+| Type | [Raveo](https://github.com/jakubfoglar/raveo) (self-hosted woff2), [Archivo Variable](https://fonts.google.com/specimen/Archivo), [Caveat](https://fonts.google.com/specimen/Caveat) via [Fontsource](https://fontsource.org) | Display + UI + handwriting |
+| Dev server | [Express](https://expressjs.com) | Vite middleware in dev, static `dist/` in prod |
+| Media pipeline | [ffmpeg-static](https://github.com/eugeneware/ffmpeg-static) (`npm run prepare-videos`) | Re-encodes raw generated video for the web |
+| Generated media | [Magnific](https://www.magnific.com) | Product-referenced imagery and video for the exercise |
+| Hosting | [Netlify](https://www.netlify.com) (static `dist/`) | Headers configured in `netlify.toml` |
 
 ## Feature map
 
@@ -106,9 +108,15 @@ npm run prepare-videos  # re-encode raw video sources (needs assets-raw/, not in
 ## Credits
 
 - Design and build: **Armando Sotoca** ([@Skeku](https://x.com/Skeku))
-- Raveo typeface by Jakub Foglar (free license)
-- Product photography and specs from winspace.cc (property of Winspace)
-- Generated media (orbit film, ride clips, scene photography) created with AI tools for
-  this exercise
+- [Raveo](https://github.com/jakubfoglar/raveo) typeface by Jakub Foglar (free license)
+- [Archivo](https://fonts.google.com/specimen/Archivo), [Caveat](https://fonts.google.com/specimen/Caveat)
+  and [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) served via
+  [Fontsource](https://fontsource.org)
+- Product photography and specs from [winspace.cc](https://www.winspace.cc) (property of Winspace)
+- All other imagery and video (orbit film, mosaic clips, rider stories, dusk scene) was
+  generated with [Magnific](https://www.magnific.com) for this exercise
+- Animation by [GSAP](https://gsap.com), smooth scroll by
+  [Lenis](https://github.com/darkroomengineering/lenis), WebGL by [Three.js](https://threejs.org),
+  bundled with [Vite](https://vitejs.dev), hosted on [Netlify](https://www.netlify.com)
 
 No license is granted for the media assets; the code is available to read and learn from.
