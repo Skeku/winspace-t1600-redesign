@@ -1,0 +1,15 @@
+# deps & builds
+node_modules/
+dist/
+
+# deploy caches
+.netlify/
+
+# raw generated media (local source of truth, re-encoded into public/video)
+assets-raw/
+
+# internal working notes (Spanish session logs)
+docs/
+
+# os
+.DS_Store

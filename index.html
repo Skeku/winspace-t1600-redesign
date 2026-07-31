@@ -1,0 +1,405 @@
+<!doctype html>
+<!--
+
+        ██     ██ ██ ███    ██ ███████ ██████   █████   ██████ ███████
+       ██     ██ ██ ████   ██ ██      ██   ██ ██   ██ ██      ██
+      ██  █  ██ ██ ██ ██  ██ ███████ ██████  ███████ ██      █████
+     ██ ███ ██ ██ ██  ██ ██      ██ ██      ██   ██ ██      ██
+     ███ ███  ██ ██   ████ ███████ ██      ██   ██  ██████ ███████
+
+     CARBON BIKE MANUFACTURING PIONEER
+     T1600 ULTRA · OBSIDIAN GOLD
+
+     A design exercise by Armando Sotoca · https://x.com/Skeku
+
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winspace T1600 Ultra · Obsidian Gold</title>
+  <meta name="description" content="The Winspace T1600 Ultra Dura-Ace Di2 in Obsidian Gold. Race-proven aero, Toray T1000 carbon, 7.3 kg. Reserve yours." />
+  <link rel="preload" href="/fonts/Raveo-Display-ExtraBold.woff2" as="font" type="font/woff2" crossorigin />
+  <style>
+    /* critical: prevent the unstyled flash before the JS-injected stylesheet lands */
+    [hidden] { display: none !important; }
+    body { margin: 0; background: #0b0a08; }
+    .curtain { position: fixed; inset: 0; z-index: 80; background: #0b0a08; display: grid; place-items: center; }
+    .curtain-logo { height: 34px; width: auto; filter: invert(1); }
+    .nav-logo { height: 26px; width: auto; }
+  </style>
+</head>
+<body>
+  <!-- LOADER / TRANSITION CURTAIN -->
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain-fill"></div>
+    <div class="curtain-inner">
+      <img src="/img/winspace-logo.png" alt="" class="curtain-logo" />
+      <span class="curtain-num">0</span>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#numbers">Skip to content</a>
+
+  <header class="site-nav">
+    <a class="nav-brand" href="https://www.winspace.cc" target="_blank" rel="noopener noreferrer">
+      <img src="/img/winspace-logo.png" alt="Winspace" class="nav-logo" />
+    </a>
+    <button type="button" class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- FULLSCREEN MENU -->
+  <div class="menu" id="menu" hidden role="dialog" aria-modal="true" aria-label="Menu">
+    <nav class="menu-list" aria-label="Sections">
+      <a href="#film" data-menu>T1600 Ultra</a>
+      <a href="#numbers" data-menu>Race numbers</a>
+      <a href="#geometry" data-menu>Race geometry</a>
+      <a href="#closer" data-menu>Get closer</a>
+      <a href="#riders" data-menu>Riders are talking</a>
+      <a href="#partner-pitch" data-menu>Pitch your partner</a>
+      <a class="menu-reserve" data-wipe href="https://www.winspace.cc/products/t1600-ultra-dura-ace-di2?variant=51516678144295">Reserve yours</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- ambient aurora field: drifting gold glows and black sinks behind everything -->
+    <div class="bg-field" aria-hidden="true">
+      <div class="bg-blob"></div>
+      <div class="bg-blob"></div>
+      <div class="bg-blob"></div>
+      <div class="bg-blob"></div>
+      <div class="bg-blob"></div>
+      <div class="bg-blob"></div>
+    </div>
+
+    <!-- HERO · 500vh scroll-scrubbed orbit film + gold dust -->
+    <section class="hero" id="film" aria-label="T1600 Ultra">
+      <div class="hero-sticky">
+        <div class="hero-zoom">
+          <video
+            class="hero-video"
+            src="/video/orbit-scrub.mp4"
+            poster="/video/orbit-poster.jpg"
+            muted
+            loop
+            playsinline
+            preload="auto"
+          ></video>
+          <canvas class="hero-canvas" aria-hidden="true"></canvas>
+          <div class="hero-shade" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-grid" aria-hidden="true">
+          <figure class="cell"><video data-src="/video/grid-wheel.mp4" muted loop playsinline></video></figure>
+          <figure class="cell"><video data-src="/video/clip-sprint.mp4" muted loop playsinline></video></figure>
+          <figure class="cell"><video data-src="/video/grid-weave.mp4" muted loop playsinline></video></figure>
+          <figure class="cell"><video data-src="/video/grid-di2.mp4" muted loop playsinline></video></figure>
+          <div class="cell cell-center"></div>
+          <figure class="cell"><video data-src="/video/grid-cockpit.mp4" muted loop playsinline></video></figure>
+          <figure class="cell"><video data-src="/video/grid-tunnel.mp4" muted loop playsinline></video></figure>
+          <figure class="cell"><video data-src="/video/clip-descent.mp4" muted loop playsinline></video></figure>
+          <figure class="cell"><video data-src="/video/grid-laser.mp4" muted loop playsinline></video></figure>
+        </div>
+
+        <h1 class="hero-type" aria-label="T1600 Ultra">
+          <span class="hero-word" data-split>T1600</span>
+          <span class="hero-word hero-word-outline" data-split>ULTRA</span>
+        </h1>
+
+        <div class="hero-copy">
+          <p class="hero-sub"><span class="hero-sub-in">Race-proven aero. Toray T1000 carbon. Full Dura-Ace Di2. This is the Obsidian Gold edition.</span></p>
+          <div class="hero-ctas">
+            <a class="cta cta-primary" data-wipe href="https://www.winspace.cc/products/t1600-ultra-dura-ace-di2?variant=51516678144295">Reserve yours</a>
+            <a class="cta cta-ghost" href="#partner-pitch">Pitch your partner</a>
+          </div>
+        </div>
+
+        <p class="hero-cue" aria-hidden="true">Scroll to continue</p>
+
+        <p class="hero-caption" data-caption="0">Every watt you put in, the frame gives back.</p>
+        <p class="hero-caption" data-caption="1">7.3 kilograms. Built to disappear beneath you.</p>
+        <p class="hero-caption" data-caption="2">Obsidian black.<br /><em>Championship gold.</em></p>
+      </div>
+    </section>
+
+    <!-- NUMBERS · bento of race data + full build -->
+    <section class="stats" id="numbers" aria-label="Race numbers and full specification">
+      <canvas class="stats-wind" aria-hidden="true"></canvas>
+      <h2 class="section-title">Race numbers</h2>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-num" data-count="7.3" data-decimals="1">7.3</span>
+          <span class="stat-unit">kg, complete build</span>
+          <p>Total weight in size M with Dura-Ace Di2 and carbon wheels. No pedals, no excuses.</p>
+        </div>
+        <div class="stat stat-img">
+          <img src="/img/detail-9.webp" alt="T1600 Ultra frame detail" loading="lazy" />
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="12">12</span>
+          <span class="stat-unit">speeds, wireless shifting</span>
+          <p>Full Shimano Dura-Ace Di2 R9200 with hydraulic disc brakes. The group the pros race.</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="50">50</span>
+          <span class="stat-unit">mm deep carbon</span>
+          <p>Lún HYPER D50 wheels wrapped in Michelin Power Cup. Fast on paper, faster on road.</p>
+        </div>
+
+        <div class="stat spec-group">
+          <h3>Frameset</h3>
+          <dl>
+            <div><dt>Frame</dt><dd>Toray T1000 + T1100 carbon, Kevlar weave</dd></div>
+            <div><dt>Fork</dt><dd>Full carbon, wide-stance aero</dd></div>
+            <div><dt>Bottom bracket</dt><dd>T47 threaded</dd></div>
+            <div><dt>Hanger</dt><dd>Universal Derailleur Hanger</dd></div>
+            <div><dt>Seatpost</dt><dd>Ultra-slim aero</dd></div>
+          </dl>
+        </div>
+        <div class="stat spec-group">
+          <h3>Drivetrain</h3>
+          <dl>
+            <div><dt>Shifters</dt><dd>Shimano ST-R9270</dd></div>
+            <div><dt>Derailleurs</dt><dd>FD-R9250 + RD-R9250</dd></div>
+            <div><dt>Crankset</dt><dd>Dura-Ace FC-R9200</dd></div>
+            <div><dt>Cassette</dt><dd>CS-R9200, 12-speed</dd></div>
+            <div><dt>Brakes</dt><dd>Hydraulic disc, 160/140 mm</dd></div>
+          </dl>
+        </div>
+        <div class="stat spec-group">
+          <h3>Wheels &amp; cockpit</h3>
+          <dl>
+            <div><dt>Wheelset</dt><dd>Lún HYPER 5 D50 carbon</dd></div>
+            <div><dt>Tires</dt><dd>Michelin Power Cup 700x28C</dd></div>
+            <div><dt>Handlebar</dt><dd>HYPER2 integrated riser</dd></div>
+            <div><dt>Saddle</dt><dd>Selle Italia SLR</dd></div>
+            <div><dt>Headset</dt><dd>1-1/2" upper and lower</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- GEOMETRY · bento: diagram, sizes, figures, ride-character radar -->
+    <section class="geo" id="geometry" aria-label="Geometry">
+      <h2 class="section-title">Race geometry</h2>
+      <div class="geo-grid">
+        <figure class="geo-cell geo-diagram">
+          <img src="/img/geometry-diagram.webp" alt="T1600 Ultra frame geometry diagram" loading="lazy" />
+        </figure>
+        <div class="geo-cell geo-cell-fit">
+          <h3>Frame size</h3>
+          <div class="geo-sizes" role="tablist" aria-label="Frame size">
+            <button type="button" class="size-btn" data-size="XS">XS</button>
+            <button type="button" class="size-btn" data-size="S">S</button>
+            <button type="button" class="size-btn is-active" data-size="M">M</button>
+            <button type="button" class="size-btn" data-size="L">L</button>
+            <button type="button" class="size-btn" data-size="XL">XL</button>
+          </div>
+          <p class="geo-height">Recommended rider height: <span data-geo="height">171-179 cm</span></p>
+          <dl class="geo-figures">
+            <div><dt>Stack</dt><dd data-geo="stack">525</dd></div>
+            <div><dt>Reach</dt><dd data-geo="reach">388</dd></div>
+            <div><dt>Top tube</dt><dd data-geo="tt">538</dd></div>
+            <div><dt>Head angle</dt><dd data-geo="ha">72&deg;</dd></div>
+            <div><dt>Seat angle</dt><dd data-geo="sa">74&deg;</dd></div>
+            <div><dt>Wheelbase</dt><dd data-geo="wb">975</dd></div>
+          </dl>
+          <button type="button" class="cta size-reco">Find my size</button>
+        </div>
+        <div class="geo-cell geo-cell-radar">
+          <h3>Ride character</h3>
+          <div class="radar-wrap">
+            <figure class="geo-radar">
+              <svg class="radar-svg" viewBox="0 0 420 360" role="img" aria-label="Ride character comparison out of ten, illustrative example data. T1600 Ultra: Aero 9, Sprint 9, Climbing 8.5, Handling 8.5, Endurance 8, Comfort 7. Tarmac SL8: 8.5, 8.5, 9, 9, 7.5, 7.5. Aeroad CFR: 9, 9, 7.5, 8, 8, 6.5. Madone SLR: 9, 8.5, 8, 8.5, 8.5, 7.5. S5: 9.5, 9, 7, 8, 7.5, 6.5."></svg>
+            </figure>
+            <div class="radar-side">
+              <p class="radar-lede">Six traits that decide a superbike. Overlay a rival, see where it gives ground.</p>
+              <ul class="radar-legend">
+                <li><button type="button" data-series="0" aria-pressed="true" style="--swatch: #b08a35"><span class="dot"></span>T1600 Ultra</button></li>
+                <li><button type="button" data-series="1" aria-pressed="true" style="--swatch: #5585c9"><span class="dot"></span>Tarmac SL8</button></li>
+                <li><button type="button" data-series="2" aria-pressed="true" style="--swatch: #3fa374"><span class="dot"></span>Aeroad CFR</button></li>
+                <li><button type="button" data-series="3" aria-pressed="false" style="--swatch: #8a7bd8"><span class="dot"></span>Madone SLR</button></li>
+                <li><button type="button" data-series="4" aria-pressed="false" style="--swatch: #bd5f77"><span class="dot"></span>S5</button></li>
+              </ul>
+              <div class="radar-readout" aria-live="polite">
+                <p class="readout-name">T1600 Ultra</p>
+                <dl class="readout-grid"></dl>
+              </div>
+              <p class="radar-note">All figures are illustrative examples, out of ten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UP CLOSE · accordion slider + zoom -->
+    <section class="gallery" id="closer" aria-label="Up close">
+      <h2 class="section-title">Get closer</h2>
+      <div class="accordion" role="list">
+        <button class="strip is-active" role="listitem" data-caption="Gloss obsidian lacquer, gold graphics. Tap to zoom.">
+          <img src="/img/detail-1.webp" alt="Three-quarter view of the T1600 Ultra" loading="lazy" />
+        </button>
+        <button class="strip" role="listitem" data-caption="Toray T1000 and T1100 carbon with Kevlar weave. Tap to zoom.">
+          <img src="/img/detail-2.webp" alt="Carbon frame detail" loading="lazy" />
+        </button>
+        <button class="strip" role="listitem" data-caption="HYPER2 integrated cockpit, fully hidden cabling. Tap to zoom.">
+          <img src="/img/detail-5.webp" alt="HYPER2 integrated cockpit" loading="lazy" />
+        </button>
+        <button class="strip" role="listitem" data-caption="Dura-Ace Di2 R9200, twelve speeds of instant shifting. Tap to zoom.">
+          <img src="/img/detail-7.webp" alt="Dura-Ace Di2 drivetrain" loading="lazy" />
+        </button>
+        <button class="strip" role="listitem" data-caption="Lún HYPER D50 wheels with tan-wall Michelins. Tap to zoom.">
+          <img src="/img/detail-9.webp" alt="Lún HYPER D50 wheel" loading="lazy" />
+        </button>
+      </div>
+      <p class="accordion-caption" aria-live="polite">Gloss obsidian lacquer, gold graphics. Tap to zoom.</p>
+    </section>
+
+    <!-- SCENE · zoom parallax full-bleed -->
+    <section class="scene" aria-label="Aerodynamics">
+      <div class="scene-frame">
+        <img src="/img/scene-dusk.jpg" alt="Cyclist riding the T1600 Ultra at dusk on a mountain pass" loading="lazy" />
+        <canvas class="scene-wind" aria-hidden="true"></canvas>
+      </div>
+      <div class="scene-copy">
+        <h2>Built against the wind</h2>
+        <p>D-type Intake aero system, wide-stance fork, ultra-thin head tube. Winspace's next generation of free speed.</p>
+      </div>
+    </section>
+
+    <!-- RESERVE · conversion -->
+    <section class="reserve" aria-label="Reserve">
+      <figure class="reserve-media">
+        <img class="reserve-bike" src="/img/bike-cutout.webp" alt="T1600 Ultra Obsidian Gold, full side view" loading="lazy" />
+      </figure>
+      <div class="reserve-info">
+        <h2>T1600 Ultra<br />Dura-Ace Di2</h2>
+        <p class="reserve-price">$6,369</p>
+        <p class="reserve-note">UCI-approved frameset. Obsidian Gold edition. Ships worldwide, direct from the factory that builds it.</p>
+        <a class="cta cta-primary" data-wipe href="https://www.winspace.cc/products/t1600-ultra-dura-ace-di2?variant=51516678144295">Reserve yours</a>
+      </div>
+    </section>
+
+    <!-- RIDERS · fake influencer story carousel -->
+    <section class="riders" id="riders" aria-label="Riders are talking">
+      <h2 class="section-title">Riders are talking</h2>
+      <div class="riders-marquee" data-marquee>
+        <div class="riders-track">
+          <figure class="phone">
+            <video data-src="/video/story-city.mp4" poster="/img/rider-city.jpg" muted loop playsinline></video>
+            <figcaption><span class="phone-quote">Borrowed my husband's T1600 once. It's my bike now.</span><span class="phone-handle">@wattsupwithclara</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <video data-src="/video/story-unbox.mp4" poster="/img/rider-unbox.jpg" muted loop playsinline></video>
+            <figcaption><span class="phone-quote">The gold flakes in the paint are real. I checked.</span><span class="phone-handle">@gruppetto.gus</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <video data-src="/video/story-pov.mp4" poster="/img/rider-pov.jpg" muted loop playsinline></video>
+            <figcaption><span class="phone-quote">POV: you said one last climb three climbs ago.</span><span class="phone-handle">@kmspercoffee</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <video data-src="/video/story-summit.mp4" poster="/img/rider-summit.jpg" muted loop playsinline></video>
+            <figcaption><span class="phone-quote">New PR on my commute. Twice.</span><span class="phone-handle">@sprintfinish.mei</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <video data-src="/video/story-door.mp4" poster="/img/rider-door.jpg" muted loop playsinline></video>
+            <figcaption><span class="phone-quote">New bike day. The whole street knows.</span><span class="phone-handle">@breakaway.ben</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <video data-src="/video/story-cafe.mp4" poster="/img/rider-cafe.jpg" muted loop playsinline></video>
+            <figcaption><span class="phone-quote">Sold my second car. Kept the bike.</span><span class="phone-handle">@paolo.rides</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <video data-src="/video/story-peel.mp4" poster="/img/rider-peel.jpg" muted loop playsinline></video>
+            <figcaption><span class="phone-quote">First ride out the door. I took the long way home.</span><span class="phone-handle">@velo.vicente</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNER PITCH · cream desk, handwritten notes -->
+    <section class="pitch" id="partner-pitch" aria-label="Pitch your partner">
+      <div class="pitch-inner">
+        <div class="pitch-col">
+          <h2 class="section-title">Pitch your partner</h2>
+          <p class="pitch-lede">We know. Sometimes a new bike is a want dressed up as a need. Five openers, field-tested by riders who made it home with the bike. Pick your angle, copy it, good luck.</p>
+          <div class="pitch-index" role="tablist" aria-label="Pitch angles">
+            <button type="button" class="index-item" data-angle="The practical angle">Practical</button>
+            <button type="button" class="index-item" data-angle="The financial angle">Financial</button>
+            <button type="button" class="index-item" data-angle="The health angle">Health</button>
+            <button type="button" class="index-item" data-angle="The romantic angle">Romantic</button>
+            <button type="button" class="index-item" data-angle="The full-disclosure angle">Full disclosure</button>
+          </div>
+        </div>
+        <div class="pitch-stack" role="group" aria-label="Pitch notes">
+          <span class="copy-tip" aria-hidden="true">Copy message</span>
+          <article class="note">
+            <p class="note-tag">The full-disclosure angle</p>
+            <p>I have thought about this for four months. I have a spreadsheet. Column F is titled 'reasons' and it goes down to row 34. The bike weighs 7.3 kilograms. The spreadsheet, emotionally, weighs more.</p>
+            <p>Let me close the tab. Reserve the bike, delete the spreadsheet, everyone wins.</p>
+          </article>
+          <article class="note">
+            <p class="note-tag">The romantic angle</p>
+            <p>Remember when you said I should do more things that make me happy? It is called Obsidian Gold, it is beautiful, and it makes me ridiculously happy. Also it is quieter than a drum kit and cheaper than redoing the kitchen.</p>
+            <p>I already know which wall it goes on. You will barely notice it. I will notice it constantly.</p>
+          </article>
+          <article class="note">
+            <p class="note-tag">The health angle</p>
+            <p>The doctor said more cardio. This is cardio with a five-star review. Faster bike, longer rides, better sleep, better mood. You get back a happier, pleasantly tired person who volunteers to cook on Sundays.</p>
+            <p>The bike pays for itself in endorphins. Ask my future self.</p>
+          </article>
+          <article class="note">
+            <p class="note-tag">The financial angle</p>
+            <p>Let's talk numbers. Spin bikes become clothes racks. Watches sit in drawers. This is 7.3 kilograms of carbon that holds its resale value and replaces a gym membership, a therapist and at least two streaming subscriptions.</p>
+            <p>It's not spending. It's consolidating.</p>
+          </article>
+          <article class="note">
+            <p class="note-tag">The practical angle</p>
+            <p>Hear me out. It weighs 7.3 kilograms, which means I climb faster, get home earlier and complain less at dinner. It is black and gold, so it matches everything we own. And you can track my rides live, which, let's be honest, you already do.</p>
+            <p>The Winspace T1600 Ultra. Cheaper than a midlife crisis, and it looks better in the hallway.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SPEED WARP · turbulence displacement + directional blur, driven by scroll velocity -->
+  <svg class="speed-filter" width="0" height="0" aria-hidden="true" focusable="false">
+    <filter id="speed-warp" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0012 0.004" numOctaves="1" seed="7" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" result="warp" />
+      <feGaussianBlur in="warp" stdDeviation="0 0" />
+    </filter>
+  </svg>
+
+  <!-- LIGHTBOX · detail zoom -->
+  <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image zoom">
+    <button type="button" class="lightbox-cerrar">Close</button>
+    <div class="lightbox-stage">
+      <img class="lightbox-img" src="" alt="" />
+    </div>
+  </div>
+
+  <!-- FOOTER · fixed gold reveal -->
+  <footer class="site-footer" aria-label="Closing">
+    <div class="footer-inner">
+      <p class="footer-word" aria-hidden="true">WINSPACE</p>
+      <canvas class="footer-canvas" aria-hidden="true"></canvas>
+      <div class="footer-base">
+        <nav aria-label="Secondary">
+          <a href="https://www.winspace.cc" data-wipe>Official site</a>
+          <a href="https://www.winspace.cc/products/t1600-ultra-dura-ace-di2" data-wipe>T1600 Ultra</a>
+          <a href="https://www.instagram.com/winspace_official" data-wipe>Instagram</a>
+        </nav>
+        <p class="footer-note">A design exercise by <a href="https://x.com/Skeku" target="_blank" rel="noopener noreferrer">Armando Sotoca</a>, designer and amateur cyclist. Not affiliated with Winspace.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
